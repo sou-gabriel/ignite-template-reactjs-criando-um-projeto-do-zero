@@ -1,1 +1,66 @@
 // TODO
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  & + & {
+    margin-top: 3rem;
+  }
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.625rem;
+}
+
+.time,
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--info);
+
+  > svg {
+    font-size: 20px;
+  }
+}
+
+.loadNewPostsButton {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--highlight);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.list + .loadNewPostsButton {
+  margin-top: 4rem;
+}
