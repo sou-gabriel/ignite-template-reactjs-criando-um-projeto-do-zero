@@ -5,3 +5,43 @@
 }
 
 // TODO
+:root {
+  --highlight: #ff57b2;
+  --heading: #f8f8f8;
+  --background: #1a1d23;
+  --info: #bbbbbb;
+  --body: #d7d7d7;
+}
+
+*,
+button,
+a,
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  color: var(--body);
+}
+
+html {
+  @media (max-width: 1024px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--background);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
